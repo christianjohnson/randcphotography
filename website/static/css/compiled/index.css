@@ -22,7 +22,7 @@
       margin: 0 0 20px; }
   #feature_slider #pagination {
     position: absolute;
-    top: 670px;
+    top: 430px;
     z-index: 3;
     margin: 0;
     padding: 0;
@@ -144,7 +144,7 @@
     height: 37px;
     display: block;
     position: absolute;
-    top: 340px;
+    top: 260px;
     left: 0;
     background: url(../../img/leftright-arrows.png) no-repeat;
     opacity: .5;
@@ -160,7 +160,7 @@
     height: 37px;
     display: block;
     position: absolute;
-    top: 340px;
+    top: 260px;
     left: auto;
     right: 0;
     background: url(../../img/leftright-arrows.png) no-repeat;
