@@ -1,9 +1,8 @@
 /* Main Slider
 -------------------------------------------------- */
 #feature_slider {
-  /*height: 720px;*/
+  height: 720px;
   height: 480px;
-  /*height: 720px;*/
   background: #262626;
   z-index: 1;
   margin-bottom: 40px; }
@@ -22,7 +21,7 @@
       margin: 0 0 20px; }
   #feature_slider #pagination {
     position: absolute;
-    top: 430px;
+    top: 505px;
     z-index: 3;
     margin: 0;
     padding: 0;
@@ -144,7 +143,7 @@
     height: 37px;
     display: block;
     position: absolute;
-    top: 260px;
+    top: 250px;
     left: 0;
     background: url(../../img/leftright-arrows.png) no-repeat;
     opacity: .5;
@@ -160,7 +159,7 @@
     height: 37px;
     display: block;
     position: absolute;
-    top: 260px;
+    top: 250px;
     left: auto;
     right: 0;
     background: url(../../img/leftright-arrows.png) no-repeat;
