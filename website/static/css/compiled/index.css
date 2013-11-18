@@ -3,6 +3,7 @@
 #feature_slider {
   height: 720px;
   height: 480px;
+  height: 560px;
   background: #262626;
   z-index: 1;
   margin-bottom: 40px; }
@@ -21,7 +22,8 @@
       margin: 0 0 20px; }
   #feature_slider #pagination {
     position: absolute;
-    top: 505px;
+    /*top: 505px;*/
+    top: 585px;
     z-index: 3;
     margin: 0;
     padding: 0;
@@ -55,6 +57,7 @@
     width: 100%;
     /*height: 720px;*/
     height: 480px;
+    height: 560px;
     position: absolute;
     display: none;
     overflow: hidden;
