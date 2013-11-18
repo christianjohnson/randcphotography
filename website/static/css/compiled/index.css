@@ -146,7 +146,8 @@
     height: 37px;
     display: block;
     position: absolute;
-    top: 250px;
+    /*top: 250px;*/
+    top: 290px;
     left: 0;
     background: url(../../img/leftright-arrows.png) no-repeat;
     opacity: .5;
@@ -162,7 +163,8 @@
     height: 37px;
     display: block;
     position: absolute;
-    top: 250px;
+    /*top: 250px;*/
+    top: 290px;
     left: auto;
     right: 0;
     background: url(../../img/leftright-arrows.png) no-repeat;
