@@ -4,7 +4,13 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
+libraries:
+- name: webapp2
+  version: latest
+
 handlers:
+- url: /form-response
+  script: dynamic.responder.application
 
 # re-direct to index.html if no path is give
 - url: /

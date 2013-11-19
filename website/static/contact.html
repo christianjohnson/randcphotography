@@ -18,6 +18,17 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<script type="text/javascript"> 
+
+	function stopRKey(evt) { 
+	  var evt = (evt) ? evt : ((event) ? event : null); 
+	  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+	  if ((evt.keyCode == 13) && (node.type=="text")) {return false;} 
+	} 
+
+	document.onkeypress = stopRKey; 
+
+	</script>
 </head>
 <body onload="initialize()">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -42,25 +53,22 @@
             </div>
         </div>
     </div>
-    
-
     <div id="contact">
         <div class="container">
             <div class="section_header">
                 <h3>Get in touch</h3>
             </div>
             <div class="row contact">
-                <p>
-                    We’d love to hear from you. Interested in working together? Fill out the form below with some info about your project and we will get back to you as soon as we can. Please allow a couple days for us to respond.</p>
+                <p>We’d love to hear from you. Interested in working together? Fill out the form below with some info about your project and we will get back to you as soon as we can. Please allow a couple days for us to respond.</p>
 
-                <form>
+                <form action="form-response" method="post">
                     <div class="row form">
                         <div class="col-sm-6 row-col">
                             <div class="box">
-                                <input class="name form-control" type="text" placeholder="Name">
-                                <input class="mail form-control" type="text" placeholder="Email">
-                                <input class="phone form-control" type="text" placeholder="Phone">
-                                <input id="autocomplete" class="place form-control" type="text" placeholder="Event Location" autocomplete="off">
+                                <input class="name form-control" type="text" name="name" placeholder="Name">
+                                <input class="mail form-control" type="text" name="email" placeholder="Email">
+                                <input class="phone form-control" type="text" name="phone" placeholder="Phone">
+                                <input id="autocomplete" class="place form-control" type="text" name="location" placeholder="Event Location" autocomplete="off">
 
 								    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 								    <script>
@@ -80,12 +88,11 @@
 								  var place = autocomplete.getPlace();
 								}
 								    </script>
-
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="box">
-                                <textarea placeholder="Let us know your event details and photography needs..." class="form-control"></textarea>
+                                <textarea name="details" placeholder="Let us know your event details and photography needs..." class="form-control"></textarea>
                             </div>
                         </div>
                     </div>
