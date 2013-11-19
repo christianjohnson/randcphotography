@@ -69,10 +69,10 @@
                     <div class="row form">
                         <div class="col-sm-6 row-col">
                             <div class="box">
-                                <input class="name form-control" type="text" name="name" placeholder="Name">
-                                <input class="mail form-control" type="text" name="email" placeholder="Email">
-                                <input class="phone form-control" type="text" name="phone" placeholder="Phone">
-                                <input id="autocomplete" class="place form-control" type="text" name="location" placeholder="Event Location" autocomplete="off">
+                                <input class="name form-control" type="text" name="name" placeholder="Name" autocomplete="off">
+                                <input class="mail form-control" type="text" name="email" placeholder="Email" autocomplete="off">
+                                <input class="phone form-control" type="text" name="phone" placeholder="Phone" autocomplete="off">
+                                <input id="location" class="place form-control" type="text" name="location" placeholder="Event Location" autocomplete="off">
 
 								    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 								    <script>
@@ -80,7 +80,7 @@
 
 								function initialize() {
 								  autocomplete = new google.maps.places.Autocomplete(
-								      /** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
+								      /** @type {HTMLInputElement} */(document.getElementById('location')),
 								      { types: ['geocode'] });
 								  google.maps.event.addListener(autocomplete, 'place_changed', function() {
 								    fillInAddress();

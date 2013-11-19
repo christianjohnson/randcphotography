@@ -11,7 +11,7 @@ class Emailer(webapp2.RequestHandler):
      form_location = cgi.escape(self.request.get('location'))
      form_details = cgi.escape(self.request.get('details'))
      
-     sender_address = 'info@randcphotos.com'
+     sender_address = 'robert@3dslice.com'
      user_address = 'info@randcphotos.com'
      subject = 'New Photography Inquiry from %s' % form_name
      body = """
