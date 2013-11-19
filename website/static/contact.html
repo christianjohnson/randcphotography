@@ -60,6 +60,10 @@
             </div>
             <div class="row contact">
                 <p>We’d love to hear from you. Interested in working together? Fill out the form below with some info about your project and we will get back to you as soon as we can. Please allow a couple days for us to respond.</p>
+				<div id="success_submitted" class="alert alert-success alert-dismissable hide">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>Thank you!</strong> We'll be in touch shortly.
+				</div>
 
                 <form action="form-response" method="post">
                     <div class="row form">
@@ -81,6 +85,13 @@
 								  google.maps.event.addListener(autocomplete, 'place_changed', function() {
 								    fillInAddress();
 								  });
+								  
+								  //Check if form submitted
+								  var submitted = decodeURI((RegExp('s=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
+								  alert(submitted);
+								  if (submitted == 1){
+								  	$("#success_submitted").removeClass('hide');
+								  }
 								}
 
 								function fillInAddress() {
