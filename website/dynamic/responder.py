@@ -5,7 +5,7 @@ from google.appengine.api import mail
 
 class Emailer(webapp2.RequestHandler):
   def post(self):
-	 form_name = cgi.escape(self.request.get('name'))
+     form_name = cgi.escape(self.request.get('name'))
      form_email = cgi.escape(self.request.get('email'))
      form_phone = cgi.escape(self.request.get('phone'))
      form_location = cgi.escape(self.request.get('location'))
